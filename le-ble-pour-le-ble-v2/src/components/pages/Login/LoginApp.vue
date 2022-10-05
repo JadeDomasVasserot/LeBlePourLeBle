@@ -5,13 +5,14 @@
     </div>
     <div class="container form">
       <h2 class="Inscription">Connexion</h2>
-      <form action="/login">
+      <form action="/">
         <div class="form-floating mb-3">
           <input
             type="email"
             class="form-control"
             id="floatingInput"
             placeholder="name@example.com"
+            required
           />
           <label for="floatingInput">Adresse Email</label>
         </div>
@@ -21,6 +22,7 @@
             class="form-control"
             id="floatingPassword"
             placeholder="Password"
+            required
           />
           <label for="floatingPassword">Mot de passe</label>
         </div>
@@ -28,12 +30,12 @@
       <router-link class="password" to="/password"
         >Mot de passe oublié ?</router-link
       >
-      <button type="submit" class="btn btn-success button">
-        Se connecter
-      </button>
+      <router-link class="btn btn-success button" to="/home">
+          Se connecter
+      </router-link>
 
       <div class="row g-3">
-        <div class="col-md-3 button" >
+        <div class="col-md-3 button">
           <a
             class="btn btn-outline-dark  button-google"
             href="/users/googleauth"
@@ -49,7 +51,7 @@
             Se connecter avec Google
           </a>
         </div>
-        <div class="col-md-3 button" >
+        <div class="col-md-3 button">
           <a
             class="btn btn-outline-dark  button-google"
             href="/users/googleauth"
@@ -66,9 +68,10 @@
           </a>
         </div>
       </div>
-    <p class="sign-up">Pas encore de compte ?
-      <router-link  to="/sign-in"> S'inscrire </router-link>
-    </p>
+      <p class="sign-up">
+        Pas encore de compte ?
+        <router-link to="/sign-in"> S'inscrire </router-link>
+      </p>
     </div>
   </div>
 </template>
@@ -100,7 +103,7 @@ export default {
   margin-left: 15%;
 }
 .button-google {
-    margin-top: 5%;
+  margin-top: 5%;
 }
 .password {
   float: right;
@@ -116,7 +119,7 @@ form {
   width: 80%;
   margin-left: 10%;
 }
-.sign-up{
+.sign-up {
   margin-top: 5%;
   font-size: 20px;
 }
@@ -134,6 +137,5 @@ form {
   font-size: 50px;
   font-weight: bold;
   margin-top: 40%;
-
 }
 </style>

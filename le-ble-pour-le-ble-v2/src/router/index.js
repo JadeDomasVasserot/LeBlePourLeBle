@@ -59,9 +59,10 @@ export default new Router({
               component: StockList
             },
             {
-              path: '/modif',
+              path: '/modif/:ModifId',
               name: 'StockModif',
-              component: StockModif
+              component: StockModif,
+              props: true,
             },
             {
               path: '/create',

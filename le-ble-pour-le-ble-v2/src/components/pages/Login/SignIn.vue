@@ -14,6 +14,7 @@
             id="floatingInput"
             placeholder="mail"
             name="mail"
+            required
           />
           <label for="floatingInput" class="form-label">Adresse Email</label>
         </div>
@@ -26,25 +27,27 @@
             id="floatingInput"
             placeholder="tel"
             name="tel"
+            required
           />
           <label for="floatingInput" class="form-label">Téléphone</label>
         </div>
   </div>
   <div class="col-md-6">
     <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="floatingInput" placeholder="nom" name="nom">
+        <input type="text" class="form-control" id="floatingInput" placeholder="nom" name="nom" required>
+        
         <label for="floatingInput" class="form-label">Nom</label>
     </div>
   </div>
   <div class="col-md-6">
     <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="floatingInput" placeholder="prenom" name="prenom">
+        <input type="text" class="form-control" id="floatingInput" placeholder="prenom" name="prenom" required>
         <label for="floatingInput" class="form-label">Prénom</label>
     </div>
   </div>
   <div class="col-12">
     <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="floatingInput" placeholder="adresse" name="adresse">
+        <input type="text" class="form-control" id="floatingInput" placeholder="adresse" name="adresse" required>
         <label for="floatingInput" class="form-label">Adresse</label>
     </div>
   </div>
@@ -55,6 +58,7 @@
             class="form-control"
             id="floatingPassword"
             placeholder="Mot de passe"
+            required
           />
           <label for="floatingPassword">Mot de passe</label>
         </div>
@@ -66,6 +70,7 @@
             class="form-control"
             id="floatingPassword2"
             placeholder="Confirmation du mot de passe"
+            required
           />
           <label for="floatingPassword">Confirmation du Mot de passe</label>
         </div>

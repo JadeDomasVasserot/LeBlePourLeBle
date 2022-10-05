@@ -12,6 +12,7 @@
               class="form-control"
               id="floatingInput"
               placeholder="name@example.com"
+              required
             />
             <label for="floatingInput">Adresse Email</label>
           </div>

@@ -4,8 +4,7 @@
     <div class="container-fluid">
       <router-link to="/stock">Liste</router-link>
       <router-link to="/create">Création</router-link>
-      <router-link to="/modif">Modification</router-link>
-      <router-link to="/qr-code">Qr Code</router-link>
+      <router-link to="/qr-code"><img width="25px" src="@/assets/icons/qr-code.svg" alt=""></router-link>
   </div>
 </nav>
 </div>
