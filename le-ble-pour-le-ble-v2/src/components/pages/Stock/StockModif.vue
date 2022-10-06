@@ -37,6 +37,9 @@
 
 <script>
 import axios from 'axios';
+const headers = {
+    "Content-Type": "application/json",
+};
 export default {
   name: "StockModif",
   props:['ModifId'],
@@ -48,12 +51,12 @@ export default {
 },
   methods:{
       async getFormValues (submitEvent) {
-          await axios.post('http://127.0.0.1:8000/api/produits', { 
+          await axios.put('http://127.0.0.1:8000/api/produits', { 
             nom: submitEvent.target.elements.name.value,
             description: submitEvent.target.elements.description.value,
             photo: submitEvent.target.elements.photo.value,
             quantite: submitEvent.target.elements.quantite.value,
-          }).then(function (response) {
+          },{headers}).then(function (response) {
               console.log(response);
               
           })

@@ -11,7 +11,12 @@ export default {
   name: "StockApp",
   components:{
     NavBar
-  }
+  },
+  data () {
+    return {
+    }},
+    methods:{
+    },
 }
 </script>
 

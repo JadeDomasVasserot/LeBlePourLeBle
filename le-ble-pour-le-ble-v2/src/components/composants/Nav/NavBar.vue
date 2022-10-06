@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
 #NavBar{
-  background-color: #EDDFB3;
+  background-color: #D6CDA4;
   
 }
 .container-fluid{

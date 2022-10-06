@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 #Footer{
-  background-color: #76BA99;
+  background-color: #1C6758;
   margin-top: 10%;
 }
 .mention {

@@ -26,7 +26,7 @@ export default {
 
 <style scoped>
   #Header{
-    background-color: #CA955C;
+    background-color: #3D8361;
     padding-top: 1%;
   }
 .menu{

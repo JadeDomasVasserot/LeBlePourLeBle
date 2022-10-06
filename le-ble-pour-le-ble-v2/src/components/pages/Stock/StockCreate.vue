@@ -35,6 +35,9 @@
 
 <script>
 import axios from 'axios'
+const headers = {
+    "Content-Type": "application/json",
+};
 export default {
   name: "StockCreate",
   data () {
@@ -47,8 +50,7 @@ export default {
           description: submitEvent.target.elements.description.value,
           photo: submitEvent.target.elements.photo.value,
           quantite: submitEvent.target.elements.quantite.value,
-        }
-        ).then(function (response) {
+        },{headers}).then(function (response) {
             console.log(response);
             
         })
